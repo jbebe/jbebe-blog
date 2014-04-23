@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<title>jbebe@github</title>
+	<meta charset="utf-8"/>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var elems = document.getElementsByClassName("latex");
+			for (var i = 0; i < elems.length; ++i){
+				var img = document.createElement("img");
+				img.src = "http://chart.apis.google.com/chart?cht=tx&chl=" 
+						+ encodeURIComponent(elems[i].innerHTML);
+				img.className = "math-img";
+				elems[i].parentNode.insertBefore(img, elems[i].nextSibling);
+				elems[i].parentNode.removeChild(elems[i]);
+			}
+		}
+	</script>
+	<style type="text/css">
+		body {
+			margin: 10px auto 50% auto;
+			width: 500px;
+			font: 16px/23px georgia,"times new roman",times,serif;
+			font-weight: 400;
+			color: #333;
+		}
+		.date {
+			font-weight: bold;
+			color: #bbb;
+			width: 105px;
+			height: 20px;
+			line-height: 2px;
+			display: inline-block;
+		}
+		.line {
+			width: 395px;
+			height: 5px;
+			background: #ddd;
+			display: inline-block;
+		}
+		h1 {
+			margin: 9px 15px 21px;
+			font-size: 29px;
+			font-variant: small-caps;
+		}
+		h2 {
+			margin: 9px 14px 3px 0px;
+			font-size: 18px;
+		}
+		h1 a, h1 a:visited, h1 a:active, h1 a:hover, h1 a:focus {
+			color: #333;
+			text-decoration: none;
+		}
+		h1 a:hover, a:focus {
+			text-decoration: underline;
+		}
+		#banner {
+			font: bold 40px/50px Tahoma, Arial;
+			margin: 20px 0 20px 0;
+			text-align: right;
+		}
+		
+		/* google code prettify css */
+		pre.prettyprint { 
+			border: none;
+			border-left: 5px solid #ddd;
+			font: 15px/18px monospace, 'Courier New', 'Lucida Console', Arial;
+		}
+		pre.prettyprint li[class^="L"]  {
+			background: #fff;
+			list-style-type: decimal;
+		}
+		
+		/* LaTeX from google api */
+		.math-img {
+			margin: 5px 0 0 5px;
+			padding: 10px;
+			border-left: 5px solid #ddd;
+		}
+	</style>
+</head>
+<body><div id="banner">jbebe/blog</div> 
+<div class="date">2014-04-21</div><div class="line"></div> 
+<h1><a href="#2014-04-21_Második_cikk_címe" id="2014-04-21_Második_cikk_címe">Második cikk címe</a></h1> 
+ 
+Lorem ipsum dolor sit amet, 
+Duis interdum euismod felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam iaculis iaculis massa ac pharetra. 
+<h2>Alcím - adipiscing elit.</h2> 
+Aliquam et luctus ipsum. Ut semper orci at orci euismod sollicitudin. Mauris malesuada, mauris ut sodales posuere, quam leo condimentum magna, sed elementum nunc justo et elit. Suspendisse scelerisque augue ac lacus ullamcorper euismod. Nulla vitae ipsum faucibus urna tincidunt dapibus. Mauris et consectetur leo.<br/><br/>  
+Egy kis kódolás:<br/> 
+<pre class="prettyprint linenums">
+#include "js.h"
+
+int main()
+{
+	var a = 5;
+	a = 15;
+	console.log(a);
+	getchar();
+	return 0;
+}
+</pre>
+Egy kis matek:<br/>
+<div class="latex">\left(\, \sum_{k=1}^n a_k^2 \right) \left(\, \sum_{k=1}^n b_k^2 \right)</div><br/>
+<div class="date">2014-04-20</div><div class="line"></div> 
+<h1><a href="#2014-04-20_Első_cikk_címe" id="2014-04-20_Első_cikk_címe">Első cikk címe</a></h1> 
+ 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum euismod felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam iaculis iaculis massa ac pharetra. Aliquam et luctus ipsum. Ut semper orci at orci euismod sollicitudin. Mauris malesuada, mauris ut sodales posuere, quam leo condimentum magna, sed elementum nunc justo et elit. Suspendisse scelerisque augue ac lacus ullamcorper euismod. Nulla vitae ipsum faucibus urna tincidunt dapibus. Mauris et consectetur leo.<br/>
+</body>
+</html>
